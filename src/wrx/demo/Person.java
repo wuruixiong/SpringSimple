@@ -3,8 +3,10 @@ package wrx.demo;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Component(value = "man")
-public class Man {
+//@Component,@Service,@Controller,@Repository
+//带有这些注解的类，并把这些类纳入进spring容器中管理
+@Component(value = "person")
+public class Person {
 
     @Value("blues")
     private String name;

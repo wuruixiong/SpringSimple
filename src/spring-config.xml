@@ -6,6 +6,7 @@
 
 
     <context:annotation-config/>
+    <!-- ioc容器扫描这个路径下的类 -->
     <context:component-scan base-package="wrx.demo"/>
 
 </beans>

@@ -9,7 +9,7 @@ public class In {
 
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-config.xml");
 
-        Man student = (Man)ac.getBean("man");
+        Person student = (Person)ac.getBean("person");
         System.out.println(student.getName());
         System.out.println(student.getAge());
 
