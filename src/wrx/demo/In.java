@@ -9,10 +9,14 @@ public class In {
 
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-config.xml");
 
+        // 测试IOC
         Person student = (Person)ac.getBean("person");
         System.out.println(student.getName());
         System.out.println(student.getAge());
 
+        // 测试AOP
+        SayHello syh = (SayHello) ac.getBean("hello");
+        syh.saying();
 
     }
 
